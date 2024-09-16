@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plaza Quellaveco</title>
+
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+
+        <div id="logo" class="logo">
+            <img src="src/images/logoAngloamerica.svg" alt="logoAnglo" id="logoAnglo" class="logoAnglo">
+        </div>
+
+    </header>
+
+    <main id="app" class="app">
+
+        <section id="screen1" class="screen">
+
+            <h1>Bienvenido</h1>
+
+            <h2 id="welcome-game1">Pensando y actuando, ando</h1>
+            <h2 id="tag-game1">al ritmo de la seguridad</h2>
+
+            <h2 id="modulo1">TRIVIA<br>SEGURIDAD</h2>
+            <button id="start-btn">Comenzar</button>
+
+        </section>
+
+        <section id="screen2" class="screen">
+            
+            <div id="question-container">
+                <div id="question"></div>
+                <div id="answer-buttons" class="btn-container"></div>
+                <button id="next-btn" class="next-btn">Continuar</button>
+            </div>
+
+        </section>
+
+        <section id="screen3" class="screen">
+
+            <h1>¡Lo lograste!</h1>
+            <h2>Respondiste <span id="score" style="font-size: 42px;"></span> bien</h2>
+            <h2>!Felicidades!</h2>
+            <button id="rpt-btn" class="rpt-btn">Ver Respuestas</button>
+
+        </section>
+
+        <section id="screen4" class="screen">
+
+            <h2 id="rpt-tittle">RESPUESTAS</h2>
+            <h3>¿Cuáles son las dos capas de seguridad para la conducción?</h3>
+            <h4>Relojes de vigilancia del sueño, Sistema ADAS</h4>
+            <h3>Forma parte del sistema ADAS:</h3>
+            <h4>Cámara, Mobileye, GPS</h4>
+            <h3>¿Con qué tecnología contamos en Quellaveco para cuidar de la salud de la gente?</h3>
+            <h4>Telemedicina</h4>
+            <h3>¿El servicio de telemedicina se utiliza para ...?</h3>
+            <h4>Emergencias</h4>
+
+            <button id="reset-btn" class="reset-btn">Volver a Empezar</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="src/scripts/showScreen.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

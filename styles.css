@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px)
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px)
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0)
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px)
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0)
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px)
+    }
+
+    to {
+        animation-timing-function: ease-out;
+        transform: translateY(0)
+    }
+}
+
+.app {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@font-face {
+    font-family: 'AASmartSans';
+    src: url('./src/fonts/AASmartSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'AASmartSans';
+    src: url('./src/fonts/AASmartSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+    border-end-start-radius: 50%;
+    border-end-end-radius: 50%;
+    z-index: 500;
+}
+
+#logo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin: 0;
+    width: 200px;
+    margin: 2rem;
+}
+
+#logoAnglo {
+    width: 130px;
+}
+
+
+
+
+
+
+body {
+    
+    font-family: 'AASmartSans', sans-serif;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* 100% del alto de la ventana */
+    margin: 0;
+    background: rgb(0,0,255);
+    background: linear-gradient(120deg, rgba(0,0,255,1) 38%, rgba(120,10,100,1) 92%, rgba(185,16,16,1) 100%);
+    background-image: url("./src/images/BG.jpg");
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    width: 80%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 46px;
+    color: white;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+h3, h4 {
+    color: white;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h3 {
+    margin-top: 30px;
+}
+
+#rpt-tittle {
+    margin-top: 100px;
+}
+
+#modulo1 {
+    font-family: 'AASmartSans', sans-serif;
+    font-weight: bold;
+    background: rgb(0,0,255);
+    background: linear-gradient(300deg, rgba(0,0,255,1) 1%, rgba(120,10,100,1) 50%, rgba(185,16,16,1) 100%);
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+
+button {
+    background: rgb(255, 255, 255);
+    border: 2px solid blue;
+    color: blue;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#start-btn, #reset-btn, #next-btn, #rpt-btn {
+    font-family: 'AASmartSans', sans-serif;
+    font-weight: bold;
+    background: rgb(133, 46, 247);
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 100px;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+#question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+}
+
+#question {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
