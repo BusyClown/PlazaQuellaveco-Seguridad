@@ -43,6 +43,7 @@ const rptButton            = document.getElementById('rpt-btn');
 const resetButton          = document.getElementById('reset-btn');
 const msgScore             = document.getElementById("msg-score");
 
+
 let shuffledQuestions;
 let currentQuestionIndex;
 let score;
@@ -51,16 +52,6 @@ let rptCorrect = false;
 document.addEventListener(
     "DOMContentLoaded", function() {
         showScreen(1);
-        const elem = document.documentElement; // O puedes seleccionar un elemento específico como #app
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) { // Firefox
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) { // Chrome, Safari y Opera
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { // Internet Explorer/Edge
-            elem.msRequestFullscreen();
-        }
     }
 );
 
@@ -68,6 +59,7 @@ startButton.addEventListener(
     "click", function() {
         showScreen(2);
         startGame();
+
     }
 );
 
@@ -190,3 +182,19 @@ function stylesDefault() {
 function msgCongratulation (myMessage) {
     msgScore.innerText = myMessage;
 }
+
+// function PantallaCompleta () {
+    
+//     const elem = document.documentElement;
+
+
+//     if (elem.requestFullscreen) {
+//         elem.requestFullscreen();
+//     } else if (elem.mozRequestFullScreen) { // Firefox
+//         elem.mozRequestFullScreen();
+//     } else if (elem.webkitRequestFullscreen) { // Chrome, Safari y Opera
+//         elem.webkitRequestFullscreen();
+//     } else if (elem.msRequestFullscreen) { // Internet Explorer/Edge
+//         elem.msRequestFullscreen();
+//     }
+// }

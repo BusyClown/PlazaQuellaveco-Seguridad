@@ -72,7 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80%;
     width: 100vw;
     margin: 0;
     background: rgb(0,0,255);
@@ -118,7 +118,7 @@ main {
     top: 0;
     text-align: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 section {
@@ -127,7 +127,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
@@ -138,7 +138,7 @@ section {
     margin: 0;
     position: fixed;
     top: 0;
-    height: 50vh;
+    height: 50%;
     width: 100vw;
     background-color: white;
     border-end-start-radius: 25%;
@@ -162,7 +162,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50vh;
+    height: 50%;
     margin: 0;
 }
 
@@ -172,7 +172,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50vh;
+    height: 100%;
     margin: 0;
 }
 
@@ -182,7 +182,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50vh;
+    height: 100%;
     margin: 0;
 }
 
@@ -192,7 +192,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50vh;
+    height: 100%;
     margin: 0;
 }
 
@@ -268,7 +268,7 @@ button, #start-btn, #reset-btn, #next-btn, #rpt-btn{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     margin: 0;
 }
@@ -279,7 +279,7 @@ button, #start-btn, #reset-btn, #next-btn, #rpt-btn{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
@@ -290,7 +290,7 @@ button, #start-btn, #reset-btn, #next-btn, #rpt-btn{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     margin: 0;
 }
