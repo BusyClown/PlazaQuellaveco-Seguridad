@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color: white; */
-    /* background-color: rgba(0, 0, 0, 0.3); */
+    font-family: 'AASmartSans', sans-serif;
+    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 @keyframes myAnim {
@@ -50,7 +50,7 @@
     }
 }
 
-.app {
+.app, .myAnim {
     animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
@@ -68,11 +68,23 @@
     font-style: normal;
 }
 
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: rgb(0,0,255);
+    background: linear-gradient(120deg, rgba(0,0,255,1) 38%, rgba(120,10,100,1) 92%, rgba(185,16,16,1) 100%);
+    background-image: url("./src/images/BG.jpg");
+    background-size: cover;
+    z-index: -10;
+}
 
 header {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
     margin: 0;
     position: fixed;
     top: 0;
@@ -80,38 +92,20 @@ header {
     background-color: white;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    z-index: 500;
+    z-index: 100;
 }
+
 
 #logo {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
     margin: 0;
-    width: 200px;
+    width: 100vw;
     margin: 2rem;
 }
 
 #logoAnglo {
     width: 130px;
-}
-
-
-
-
-
-
-body {
-    
-    font-family: 'AASmartSans', sans-serif;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* 100% del alto de la ventana */
-    margin: 0;
-    background: rgb(0,0,255);
-    background: linear-gradient(120deg, rgba(0,0,255,1) 38%, rgba(120,10,100,1) 92%, rgba(185,16,16,1) 100%);
-    background-image: url("./src/images/BG.jpg");
-    background-size: cover;
 }
 
 main {
@@ -120,26 +114,102 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0;
+    position: fixed;
+    top: 0;
     text-align: center;
-    width: 80%;
+    width: 100vw;
+    height: 100vh;
 }
 
 section {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+#marco {
+    display: flex;
     justify-content: center;
     margin: 0;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    height: 50vh;
+    width: 100vw;
+    background-color: white;
+    border-end-start-radius: 25%;
+    border-end-end-radius: 25%;
+}
+
+#logoConteiner {
+    width: 80%;
+}
+
+#logoEvent {
+    margin-top: 100px;
+    width: 100%;
+}
+
+#registration {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+}
+
+#form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 36px;
     color: white;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
+    width: 80%;
 }
 
 h3, h4 {
@@ -150,25 +220,36 @@ h3, h4 {
     margin-bottom: 10px;
 }
 h3 {
-    margin-top: 30px;
-}
-
-#rpt-tittle {
-    margin-top: 100px;
+    margin-top: 25px;
 }
 
 #modulo1 {
-    font-family: 'AASmartSans', sans-serif;
     font-weight: bold;
     background: rgb(0,0,255);
     background: linear-gradient(300deg, rgba(0,0,255,1) 1%, rgba(120,10,100,1) 50%, rgba(185,16,16,1) 100%);
     border: 3px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 100px;
+    width: 80%;
 }
 
-button {
+button, #start-btn, #reset-btn, #next-btn, #rpt-btn{
+    font-weight: bold;
+    background: rgb(133, 46, 247);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    width: 60%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
     background: rgb(255, 255, 255);
     border: 2px solid blue;
     color: blue;
@@ -178,35 +259,50 @@ button {
     transition: all 0.5s ease;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 100%;
-}
-
-#start-btn, #reset-btn, #next-btn, #rpt-btn {
-    font-family: 'AASmartSans', sans-serif;
-    font-weight: bold;
-    background: rgb(133, 46, 247);
-    border: 2px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 100px;
     width: 80%;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
-
 
 #question-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
     text-align: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
 }
 
-#question {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 20px;
+#resultado-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+#rpt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#rpt-tittle {
+    margin-top: 100px;
+}
+
+#rpt-list {
+    width: 80%;
+}
+
+.oculto {
+    display: none;
 }

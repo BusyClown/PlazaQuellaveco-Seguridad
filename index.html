@@ -11,73 +11,86 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
 
-    <header>
-
+    <header class="myAnim">
         <div id="logo" class="logo">
             <img src="src/images/logoAngloamerica.svg" alt="logoAnglo" id="logoAnglo" class="logoAnglo">
         </div>
-
     </header>
 
     <main id="app" class="app">
-
         <section id="screen1" class="screen">
+            <div>
+                <section>
+                    <div id="marco" class="marco myAnim">
+                        <div id="logoConteiner">
+                            <img src="src/images/plaza.png" alt="logoEvent" id="logoEvent" class="logoEvent">
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <div>
+                <section>
+                    <div id="registration" >
+                        <div id="form-container">
+                            <div id="registrationForm">
+                                <div id="form-group">
 
-            <h1>Bienvenido</h1>
+                                    <h1>Edición Innovación y Tecnología</h1>
+                                    
+                                    <h2 id="modulo1">TRIVIA<br>SEGURIDAD</h2>
+                                    <button id="start-btn">Comenzar</button>
 
-            <h2 id="welcome-game1">Pensando y actuando, ando</h1>
-            <h2 id="tag-game1">al ritmo de la seguridad</h2>
-
-            <h2 id="modulo1">TRIVIA<br>SEGURIDAD</h2>
-            <button id="start-btn">Comenzar</button>
-
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </section>
+            </div>
         </section>
 
         <section id="screen2" class="screen">
-            
             <div id="question-container">
-                <div id="question"></div>
+                <h2 id="question"></h2>
                 <div id="answer-buttons" class="btn-container"></div>
                 <button id="next-btn" class="next-btn">Continuar</button>
             </div>
-
         </section>
 
         <section id="screen3" class="screen">
-
-            <h1>¡Lo lograste!</h1>
-            <h2>Respondiste <span id="score" style="font-size: 42px;"></span> bien</h2>
-            <h2>!Felicidades!</h2>
-            <button id="rpt-btn" class="rpt-btn">Ver Respuestas</button>
-
+            <div id="resultado-container">
+                <h1 id="msg-score"></h1>
+                <h2>Respondiste <span id="score" style="font-size: 42px;"></span> bien de 4.</h2>
+                <button id="rpt-btn" class="rpt-btn">Ver respuestas</button>
+            </div>
         </section>
-
+        
         <section id="screen4" class="screen">
+            <div id="rpt-container">
+                <h2 id="rpt-tittle">RESPUESTAS</h2>
+                <div id="rpt-list">
+                    <h3>¿Cuáles son las dos capas de seguridad para la conducción?</h3>
+                    <h4>Relojes de vigilancia del sueño, Sistema ADAS</h4>
 
-            <h2 id="rpt-tittle">RESPUESTAS</h2>
-            <h3>¿Cuáles son las dos capas de seguridad para la conducción?</h3>
-            <h4>Relojes de vigilancia del sueño, Sistema ADAS</h4>
-            <h3>Forma parte del sistema ADAS:</h3>
-            <h4>Cámara, Mobileye, GPS</h4>
-            <h3>¿Con qué tecnología contamos en Quellaveco para cuidar de la salud de la gente?</h3>
-            <h4>Telemedicina</h4>
-            <h3>¿El servicio de telemedicina se utiliza para ...?</h3>
-            <h4>Emergencias</h4>
+                    <h3>Forma parte del sistema ADAS:</h3>
+                    <h4>Cámara, Mobileye, GPS</h4>
 
-            <button id="reset-btn" class="reset-btn">Volver a Empezar</button>
+                    <h3>¿Con qué tecnología contamos en Quellaveco para cuidar de la salud de la gente?</h3>
+                    <h4>Telemedicina</h4>
 
+                    <h3>¿El servicio de telemedicina se utiliza para...?</h3>
+                    <h4>Emergencias</h4>
+                </div>
+
+                <button id="reset-btn" class="reset-btn">Volver a empezar</button>
+            </div>
         </section>
-
     </main>
-
-    <footer>
-
-    </footer>
 
     <script src="src/scripts/showScreen.js"></script>
     <script src="script.js"></script>
-    
 </body>
 </html>
