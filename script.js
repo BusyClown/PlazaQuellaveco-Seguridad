@@ -51,6 +51,16 @@ let rptCorrect = false;
 document.addEventListener(
     "DOMContentLoaded", function() {
         showScreen(1);
+        const elem = document.documentElement; // O puedes seleccionar un elemento específico como #app
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { // Firefox
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { // Chrome, Safari y Opera
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { // Internet Explorer/Edge
+            elem.msRequestFullscreen();
+        }
     }
 );
 
