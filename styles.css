@@ -138,7 +138,7 @@ section {
     margin: 0;
     position: fixed;
     top: 0;
-    height: 50%;
+    height: 45%;
     width: 100vw;
     background-color: white;
     border-end-start-radius: 25%;
@@ -162,7 +162,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50%;
+    height: 60%;
     margin: 0;
 }
 
