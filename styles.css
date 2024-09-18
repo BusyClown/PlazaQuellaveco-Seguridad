@@ -274,6 +274,10 @@ button, #start-btn, #reset-btn, #next-btn, #rpt-btn{
     margin: 0;
 }
 
+#answer-buttons {
+    width: 100vw;
+}
+
 #resultado-container {
     display: flex;
     flex-direction: column;
