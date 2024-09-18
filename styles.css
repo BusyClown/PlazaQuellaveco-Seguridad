@@ -1,9 +1,9 @@
 *{
+    /* background-color: rgba(0, 0, 0, 0.1); */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'AASmartSans', sans-serif;
-    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 @keyframes myAnim {
@@ -79,7 +79,8 @@ body {
     background: linear-gradient(120deg, rgba(0,0,255,1) 38%, rgba(120,10,100,1) 92%, rgba(185,16,16,1) 100%);
     background-image: url("./src/images/BG.jpg");
     background-size: cover;
-    z-index: -10;
+    background-attachment: fixed;
+    z-index: -100;
 }
 
 header {
@@ -138,7 +139,7 @@ section {
     margin: 0;
     position: fixed;
     top: 0;
-    height: 45%;
+    height: 48%;
     width: 100vw;
     background-color: white;
     border-end-start-radius: 25%;
@@ -150,7 +151,7 @@ section {
 }
 
 #logoEvent {
-    margin-top: 90px;
+    margin-top: 80px;
     width: 100%;
 }
 
@@ -162,7 +163,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 60%;
+    height: 55%;
     margin: 0;
 }
 
